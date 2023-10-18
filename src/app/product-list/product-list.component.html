@@ -1,1 +1,19 @@
-<p>product-list works!</p>
+
+
+<div class="container">
+
+    <h2>Bestsellers</h2>
+
+
+    <div *ngFor="let product of products; index as i" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="card myCard">
+            <img src="{{product.image}}" class="card-img-top" alt="{{product.name}}">
+            <div class="card-body">
+              <h5 class="card-title">{{product.name}}</h5>
+              <p class="card-text">{{product.price | currency}}</p>
+              <a routerLink="products/{{i}}" class="btn btn-outline-success">Show more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
