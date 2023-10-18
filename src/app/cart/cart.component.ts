@@ -11,7 +11,7 @@ import {FormBuilder} from '@angular/forms'
 export class CartComponent implements OnInit {
   cart: Iproducts[] = [];
   cartForm = this.fb.group({
-    name: '',
+    name: '', 
     address: '',
   })
 

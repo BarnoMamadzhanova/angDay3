@@ -1,33 +1,38 @@
 
 
-<div class="container">
+<div class="container myContainer">
+
     <h2>Cart</h2>
-
-    <div class="cart-item" *ngFor="let item of cart">
-
-        <h4>{{item.name}}</h4>
-        <h4>{{item.description}}</h4>
-        <p>{{item.price | currency}}</p>
-        <hr><br>
+    <div class="grid">
+        <div class="card mb-3 myCard"  *ngFor="let item of cart; index as i">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{item.image}}" class="img-fluid rounded-start" alt="{{item.name}}">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <a routerLink="products/{{i}}"><h5 class="card-title">{{item.name}}</h5></a>
+                  <p class="card-text">{{item.price | currency}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
 
-    <form [formGroup]="cartForm" (ngSubmit)="onSubmit()">
-
-        <div>
-            <label for="name">
-              Name
-            </label>
+    <div class="form-container">
+        <form [formGroup]="cartForm" (ngSubmit)="onSubmit()">
+    
+    
+            <label for="name">Name</label>
             <input id="name" type="text" formControlName="name">
-        </div>
-        <div>
-            <label for="address">
-              Address
-            </label>
+    
+            <label for="address">Address</label>
             <input id="address" type="text" formControlName="address">
-        </div>
-
-        <button class="btn btn-outline-primary" type="submit">Purchase</button>
-    </form>
+    
+    
+            <button class="btn btn-outline-primary" type="submit">Purchase</button>
+        </form>
+    </div>
 
 </div>
 

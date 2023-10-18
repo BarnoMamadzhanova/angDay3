@@ -1,17 +1,17 @@
 
 
 
-<div class="container">
+<div class="container myContainer">
 
     <h2>Bestsellers Details</h2>
 
     
     <div *ngIf="product" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <div class="card">
+        <div class="card myCard m-5">
             <img src="{{product.image}}" class="card-img-top" alt="{{product.name}}">
             <div class="card-body">
               <h5 class="card-title">{{product.name}}</h5>
-              <p class="card-text">S{{product.price | currency}}</p>
+              <p class="card-text">{{product.price | currency}}</p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">{{product.description}}</li>

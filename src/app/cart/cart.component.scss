@@ -1,0 +1,80 @@
+.myContainer {
+    margin: 3rem 8rem;
+    font-family: sans-serif;
+    max-width: 1200px;
+
+    h2 {
+        color: rgb(42, 18, 148);
+        margin-bottom: 2rem;
+        font-weight: bolder;
+    }
+
+    .grid {
+
+        .myCard {
+            height: 200px;
+            width: 1200px;
+            box-shadow: 0 4px 8px 0 rgba(132, 115, 1, 0.2), 0 6px 20px 0 rgba(132, 115, 1, 0.2);
+            text-align: center;
+
+
+            .card-body {
+                margin-top: 50px;
+                color: indigo;
+
+                a {
+                    text-decoration: none;
+                    color: indigo;
+
+                    &:hover {
+                        color: blueviolet;
+                    }
+                }
+            }
+
+            img {
+                height: 180px;
+                width: 200px;
+                border-radius: 20%;
+            }
+
+            ul li {
+                color: indigo;
+            }
+        }
+    }
+
+    .form-container {
+        width: 1200px;
+
+        form {
+            background-color: rgb(252, 242, 223);
+            display: flex;
+            flex-direction: column;
+            $gap: 20px;
+            row-gap: $gap;
+            padding: 15px 15px;
+
+            label {
+                font-size: larger;
+                color: indigo;
+                margin-bottom: -$gap;
+ 
+            }
+
+            input {
+                width: 50%;
+                padding: 7px 0;
+                border: none;
+            }
+
+            button {
+                width: fit-content;
+                
+            }
+        }
+
+    }
+
+
+}

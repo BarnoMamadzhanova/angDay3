@@ -13,7 +13,7 @@ export const products = [
     price: 17,
     description: 'Medica Schonkost 6x400g Huhn',
     details: 'Leichtverdauliche Ausgangserzeugnisse',
-    image: './assets/petbalance.jpeg'
+    image: './assets/petbalance.jpg'
   },
 
   {

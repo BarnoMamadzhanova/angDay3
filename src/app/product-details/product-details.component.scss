@@ -1,0 +1,32 @@
+
+
+.myContainer {
+    margin: 3rem 8rem;
+    font-family: sans-serif;
+    max-width: 1200px;
+    
+    h2 {
+        color: rgb(42, 18, 148);
+        margin-bottom: 1rem;
+        font-weight: bolder;
+    }
+
+    .myCard {
+        height: 600px;
+        width: 280px;
+        box-shadow: 0 4px 8px 0 rgba(132, 115, 1, 0.2), 0 6px 20px 0 rgba(132, 115, 1, 0.2);
+        text-align: center;
+        color: indigo;
+
+        img {
+            height: 240px;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+
+        ul li {
+            color: indigo;
+        }
+    }
+
+}
